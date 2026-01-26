@@ -73,7 +73,7 @@ git config --list
 ```
 
 ---
-#---
+-------------------------------------------------------------------------------
 ---
 
 
@@ -82,6 +82,17 @@ git config --list
 This is the most common case for personal + learning projects.
 
 ---
+
+## Preview end-to-end
+```bash
+git init
+git status
+git add .
+git commit -m "comment: what you have be added"
+git remote add origin <your repo url>
+git push -u origin master
+```
+
 
 ## Step 1: Create Project on Your Laptop
 
@@ -98,6 +109,7 @@ At this point:
 
 * Git is NOT tracking
 * GitHub does NOT know about this project
+
 
 ---
 
@@ -206,7 +218,7 @@ git push -u origin main
 * Future pushes need only `git push`
 
 ---
-#---
+------------------------------------------------------------------------------------
 ---
 
 # SCENARIO 2: Existing GitHub Repo → Daily Work (Company Flow)
@@ -214,6 +226,19 @@ git push -u origin main
 This is daily life in real jobs.
 
 ---
+
+## Preview end-to-end
+```bash
+git close <project repo url>
+git checkout -b feature/LoginTest.java
+write code or changes
+git add .
+git status
+git commit -m "comment: what you have be added"
+git push origin feature/logintest.java
+from Github UI --> New PR(Pull Request) --> Compare branch --> Create & merge 
+```
+
 
 ## Step 1: Clone Repository
 
@@ -299,7 +324,7 @@ GitHub UI → New PR → Compare branch → Create
 * Delete branch
 
 ---
-#---
+----------------------------------------------------------------------------------------------------------
 ---
 
 # Git Rebase (--rebase) – When, Where, Why (Professional Usage)
@@ -413,7 +438,7 @@ This safely restores previous state.
 * Shared branch → NEVER rebase
 
 ---
-#---
+---------------------------------------------------------------------------------------
 ---
 
 # SCENARIO 3: Local Project + GitHub Repo Already Exists
@@ -550,6 +575,6 @@ This repo is designed for:
 * Real project confidence
 
 
-#---
+---
 
 **Author:** Manoj Kumar
