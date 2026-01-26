@@ -83,7 +83,7 @@ This is the most common case for personal + learning projects.
 
 ---
 
-## Preview end-to-end
+## Preview Query - From Scratch
 ```bash
 git init
 git status
@@ -227,7 +227,7 @@ This is daily life in real jobs.
 
 ---
 
-## Preview end-to-end
+## Preview Query - Daily Work
 ```bash
 git close <project repo url>
 git checkout -b feature/LoginTest.java
@@ -326,6 +326,7 @@ GitHub UI → New PR → Compare branch → Create
 ---
 ----------------------------------------------------------------------------------------------------------
 ---
+---
 
 # Git Rebase (--rebase) – When, Where, Why (Professional Usage)
 
@@ -333,6 +334,19 @@ This section explains **exactly when and why `--rebase` is used in real projects
 Do NOT use this blindly. Misuse breaks history.
 
 ---
+
+
+## Preview Rebase Query
+```bash
+git checkout feature/logintests
+git pull --rebase origin main
+git push origin feature/logintests
+
+#fix conflicts manually
+git add .
+git rebase --continue
+```
+
 
 ## What Problem Rebase Solves
 
