@@ -338,7 +338,7 @@ Do NOT use this blindly. Misuse breaks history.
 
 ## Preview Rebase Query
 ```bash
-git checkout feature/logintests
+git branch       --check all branch
 git pull --rebase origin main
 git push origin feature/logintests
 
