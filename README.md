@@ -338,7 +338,7 @@ Do NOT use this blindly. Misuse breaks history.
 
 ## Preview Rebase Query
 ```bash
-git branch       --check all branch
+git branch      
 git pull --rebase origin main
 git push origin feature/logintests
 
@@ -587,6 +587,95 @@ This repo is designed for:
 * Automation Engineers
 * Interview preparation
 * Real project confidence
+
+---
+# Summary
+## Daily Work
+```markdown
+1. Pull latest code
+2. Create branch
+3. Do changes
+4. Stage files
+5. Commit
+6. Push to remote
+7. Create Pull Request
+8. Review + Merge
+```
+
+## Admin & Email
+```bash
+git config --global user.name "Manoj Kumar"
+git config --global user.email "yourmail@gmail.com"
+git config --list
+```
+
+## Initial Project Push
+```bash
+git init
+git status
+git add .
+git commit -m "comment: what you have be added"
+git remote add origin <your repo url>
+git push -u origin master
+```
+
+## Exist Project Push Code
+```bash
+git close <project repo url>
+git checkout -b feature/LoginTest.java
+write code or changes
+git add .
+git status
+git commit -m "comment: what you have be added"
+git push origin feature/logintest.java
+from Github UI --> New PR(Pull Request) --> Compare branch --> Create & merge 
+```
+
+## Rebase
+```bash
+git branch                                 --check all branch
+git pull --rebase origin main
+git push origin feature/logintests
+
+#fix conflicts manually
+git add .
+git rebase --continue
+```
+
+## 
+```bash
+git branch                                         | Check branch
+git checkout - b feature/logintest.java            | Create branch 
+write your code
+git add .
+git commit -m "message"
+git push -u origin feature/logintest.java          | First push
+git push                                           | Next time
+```
+## Stash = temporary shelf.
+```bash
+git stash push -m "Comment"                         | Save your work
+git stash list                                      | Check stash list 
+git stash apply stash@{0}                           | Bring it back (safe)
+git stash pop                                       | Bring back and delete stash
+git stash drop stash@{0}                            | Delete a stash (manual)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
